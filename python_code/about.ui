@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>304</width>
-    <height>215</height>
+    <width>305</width>
+    <height>216</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -21,8 +21,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>306</width>
-     <height>211</height>
+     <width>301</width>
+     <height>191</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
@@ -104,7 +104,7 @@ color: rgb(255, 255, 255);</string>
       </property>
      </widget>
     </item>
-    <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
+    <item alignment="Qt::AlignHCenter|Qt::AlignTop">
      <widget class="QTextBrowser" name="textBrowser">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -115,7 +115,7 @@ color: rgb(255, 255, 255);</string>
       <property name="maximumSize">
        <size>
         <width>250</width>
-        <height>50</height>
+        <height>40</height>
        </size>
       </property>
       <property name="styleSheet">
