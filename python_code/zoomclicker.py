@@ -2,7 +2,7 @@ from PyQt5.QtCore import QObject, QThread, pyqtSignal
 from PyQt5 import QtCore
 from PyQt5.uic import loadUiType
 from PyQt5.QtWidgets import QApplication, QMessageBox
-import sys, platform, subprocess
+import os, sys, platform, subprocess
 from pyautogui import size as pagsize
 from pyautogui import moveTo as pagmoveTo
 from pyautogui import click as pagclick

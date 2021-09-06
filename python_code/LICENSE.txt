@@ -1,5 +1,5 @@
 ZoomClicker Copyright (c) 2021 Jabez McClelland
-pyautogui Copyright (c) 2014, Al Sweigart
+pyautogui Copyright (c) 2014 Al Sweigart
 
 
                     GNU GENERAL PUBLIC LICENSE
