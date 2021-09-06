@@ -2,7 +2,7 @@ After changing things locally, do
 git add --all
 
 then do
-git commit -m "sme note"
+git commit -m "some note"
 
 then do 
 git push origin main
