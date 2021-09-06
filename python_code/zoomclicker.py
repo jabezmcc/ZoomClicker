@@ -8,6 +8,8 @@ from pyautogui import moveTo as pagmoveTo
 from pyautogui import click as pagclick
 import time
 
+os.environ["QT_AUTO_SCREEN_SCALE_FACTOR"] = '1'
+
 Ui_MainWindow, QMainWindow = loadUiType('zoomclicker.ui') 
 Ui_AboutWindow, QAboutWindow = loadUiType('about.ui')
 
