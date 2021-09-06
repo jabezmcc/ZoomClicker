@@ -1,7 +1,9 @@
 # ZoomClicker
-A small app to automatically switch pages during a Zoom session in gallery mode
 
-The purpose of this program is to automatically switch pages while viewing a >25 participant Zoom meeting in gallery mode. The application was inspired by participating in a Quaker Meeting for Worship, where members of the Society of Friends gather in silent worship.  For most of the the hour-long worship, Friends sit in silence, so Zoom does not have a speaker to focus on.  This program periodically cycles through the pages at a preset rate, allowing the participant to see all other participants, even those on other pages, and freeing him/her/them to focus on spiritual aspects of the worship rather than the mechanics of their computer.
+A small app to automatically switch pages during a Zoom session in gallery mode.
+
+<img src="./ZoomClicker_screenshot.png" align="right">
+The purpose of this program is to automatically switch pages while viewing a >25 participant Zoom meeting in gallery mode. The application was inspired by participating in a Quaker Meeting for Worship, where members of the Society of Friends gather in silent worship.  For most of the the hour-long worship, Friends sit in silence, so Zoom does not have a speaker to focus on.  This program periodically cycles through the pages at a preset rate, allowing the participant to see all other participants, even those on other pages, and freeing him/her/them to focus on spiritual aspects of the worship rather than the mechanics of their computer.</p>
 
 <h3>INSTALLATION INSTRUCTIONS:</h3>
 
