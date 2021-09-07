@@ -8,7 +8,7 @@ The purpose of this program is to automatically switch pages while viewing a >25
 <h3>INSTALLATION INSTRUCTIONS:</h3>
 
 <h4>Windows executable:</h4>
-Download install_ZoomClicker.exe and double-click on it. Follow the prompts on the installer and ZoomClicker will be installed on your computer. An icon will be added to your start menu to start the program. If you decide you want to uninstall the program, right-click this icon and choose "unistall".       
+Download <code>install_ZoomClicker.exe</code> and double-click on it. Follow the prompts on the installer and ZoomClicker will be installed on your computer.  Windows may warn you that you are installing software from an unknown publisher.  That's because I wrote the code and Microsoft doesn't know about me.  It is safe to choose "install anyway". An icon will be added to your start menu to start the program. If you decide you want to uninstall the program, right-click this icon and choose "uninstall".       
 
 <h4> MacOS:</h4>
 Use the Python source code (untested).
