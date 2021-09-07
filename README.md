@@ -21,7 +21,7 @@ You can also run the program using your system's Python 3.x installation. Downlo
 <ol>
 <li>Start your Zoom meeting normally. Maximize the window, but don't go into full screen mode. Start the ZoomClicker application.
 </li>       
-<li>Enter the number of screens expected in the Zoom meeting (2 if there will be greater than 25 and less than 50, 3 if there will be greater than 50 and less than 75, etc.).  Enter at least two screens.
+<li>Enter the number of screens expected in the Zoom meeting (2 if there will be between 25 and 50 people, 3 if there will be between 50 and 75 people, etc.).  Enter at least two screens.
 </li>   
 <li>Enter the desired time interval between screen switches, selecting minutes or seconds, as appropriate.  Too short an interval may become distracting; too long an interval may not give you a chance to see everyone enough.  Try five minutes start and then adjust to your liking. Don’t enter less than 3 seconds, or you will lose mouse control.  If this happens, you can wait for 100 clicks, after which the program will exit. 
 </li>    
