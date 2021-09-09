@@ -11,7 +11,7 @@ The purpose of this program is to automatically switch pages while viewing a >25
 Download <code>install_ZoomClicker.exe</code> and double-click on it. Follow the prompts on the installer and ZoomClicker will be installed on your computer.  Windows may warn you that you are installing software from an unknown publisher.  That's because I wrote the code and Microsoft doesn't know about me.  It is safe to choose "install anyway". An icon will be added to your start menu to start the program. If you decide you want to uninstall the program, right-click this icon and choose "uninstall".       
 
 <h4> MacOS:</h4>
-Use the Python source code (untested).
+Use the Python source code and run from a Terminal. You will probably need to give Terminal permission to control the computer via Accessibility In System Preferences/Security and Privacy/Privacy.
 
 <h4>Python source code:</h4>
 You can also run the program using your system's Python 3.x installation. Download <code>zoomclicker.py</code>, <code>zoomclicker.ui</code>, <code>about.ui</code>, <code>LICENSE.txt</code> and <code>ZoomClickerHelp.pdf</code> into a suitable folder. Install the Python module <code><a href="https://pypi.org/project/PyAutoGUI/">pyautogui</a></code> by typing <code>pip3 install pyautogui</code> at a command prompt.  Then run the program by typing <code>python3 zoomclicker.py</code> at a command prompt.  
