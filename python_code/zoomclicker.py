@@ -13,7 +13,7 @@ os.environ["QT_AUTO_SCREEN_SCALE_FACTOR"] = '1'
 Ui_MainWindow, QMainWindow = loadUiType('zoomclicker.ui') 
 Ui_AboutWindow, QAboutWindow = loadUiType('about.ui')
 
-vers = '0.1'
+vers = '0.1.0'
 
 mousetime = 0.5
 screenwidth = pagsize().width
