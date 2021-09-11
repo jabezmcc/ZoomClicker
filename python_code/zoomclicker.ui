@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>374</width>
-    <height>247</height>
+    <width>381</width>
+    <height>276</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -204,24 +204,46 @@ color: rgb(0, 0, 0);</string>
            <property name="sizePolicy">
             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
              <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
+             <verstretch>2</verstretch>
             </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
            </property>
            <property name="maximumSize">
             <size>
              <width>60</width>
-             <height>16777215</height>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="sizeIncrement">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="baseSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
             </size>
            </property>
            <property name="font">
             <font>
-             <family>Calibri</family>
+             <family>Trebuchet MS</family>
              <pointsize>12</pointsize>
+             <weight>50</weight>
+             <italic>false</italic>
+             <bold>false</bold>
             </font>
            </property>
            <property name="styleSheet">
-            <string notr="true">background-color: rgb(255, 255, 255);
-
+            <string notr="true">background-color: rgb(255, 252, 238);
+color: rgb(0,0,0);
+font: 12pt &quot;Trebuchet MS&quot;;
 
 </string>
            </property>
@@ -354,8 +376,8 @@ color: rgb(255, 255, 255);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>374</width>
-     <height>28</height>
+     <width>381</width>
+     <height>27</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFIle">

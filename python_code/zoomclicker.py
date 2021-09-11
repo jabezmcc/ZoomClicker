@@ -1,5 +1,5 @@
 from PyQt5.QtCore import QObject, QThread, pyqtSignal
-from PyQt5 import QtCore
+from PyQt5 import QtCore, QtWidgets
 from PyQt5.uic import loadUiType
 from PyQt5.QtWidgets import QApplication, QMessageBox
 import os, sys, platform, subprocess
@@ -72,7 +72,9 @@ class Main(QMainWindow, Ui_MainWindow):
         super(Main,self).__init__()
         self.setupUi(self)
         self.runningLabel.setText("")
-        self.minsecCombo.setStyleSheet("color:white; background-color:black")
+        self.minsecCombo.setView(QtWidgets.QListView())
+#        self.minsecCombo.setStyleSheet("QListView::item {color: black; background-color: white;}")
+#        self.minsecCombo.setStyleSheet("QListView::item {height:25px;}")
         self.actionExit.triggered.connect(self.buttClose)
         self.actionHelp.triggered.connect(self.openhelp)
         self.actionAbout_2.triggered.connect(self.openabout)
