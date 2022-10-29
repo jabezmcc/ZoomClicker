@@ -7,7 +7,7 @@ from pyautogui import size as pagsize
 from pyautogui import moveTo as pagmoveTo
 from pyautogui import click as pagclick
 import time
-
+# this is rando branch
 os.environ["QT_AUTO_SCREEN_SCALE_FACTOR"] = '1'
 
 Ui_MainWindow, QMainWindow = loadUiType('zoomclicker.ui') 
@@ -36,7 +36,7 @@ class About(QAboutWindow, Ui_AboutWindow):
         try:
             if p == 'Linux':
                 subprocess.run(['xdg-open', 'LICENSE.txt'],check=True)
-            elif p=='Windows':
+            elif p== 'Windows':
                 os.system('start LICENSE.txt')
             else:
                 os.system('open LICENSE.txt')
