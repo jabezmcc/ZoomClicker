@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>381</width>
-    <height>276</height>
+    <height>358</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -24,10 +24,13 @@ color: rgb(255, 255, 255);</string>
       <x>10</x>
       <y>-10</y>
       <width>361</width>
-      <height>231</height>
+      <height>291</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout">
+     <property name="spacing">
+      <number>4</number>
+     </property>
      <item>
       <widget class="QLabel" name="label">
        <property name="sizePolicy">
@@ -283,11 +286,36 @@ font: 12pt &quot;Trebuchet MS&quot;;
       </layout>
      </item>
      <item>
+      <spacer name="verticalSpacer">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>5</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
       <layout class="QVBoxLayout" name="verticalLayout_4">
+       <property name="spacing">
+        <number>3</number>
+       </property>
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_4">
          <item>
           <widget class="QLabel" name="label_4">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>12</height>
+            </size>
+           </property>
            <property name="font">
             <font>
              <family>Trebuchet MS</family>
@@ -303,7 +331,19 @@ font: 12pt &quot;Trebuchet MS&quot;;
           </widget>
          </item>
          <item>
-          <widget class="QLabel" name="label_5">
+          <widget class="QLabel" name="randoLabel">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>15</height>
+            </size>
+           </property>
            <property name="font">
             <font>
              <family>Trebuchet MS</family>
@@ -320,6 +360,12 @@ font: 12pt &quot;Trebuchet MS&quot;;
          </item>
          <item>
           <widget class="QLabel" name="label_6">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>12</height>
+            </size>
+           </property>
            <property name="font">
             <font>
              <family>Trebuchet MS</family>
@@ -347,6 +393,9 @@ font: 12pt &quot;Trebuchet MS&quot;;
      </item>
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="spacing">
+        <number>6</number>
+       </property>
        <item>
         <widget class="QPushButton" name="startButt">
          <property name="sizePolicy">
@@ -401,24 +450,30 @@ background-color: rgb(188, 86, 86);</string>
        </item>
       </layout>
      </item>
-     <item alignment="Qt::AlignHCenter|Qt::AlignVCenter">
-      <widget class="QLabel" name="runningLabel">
-       <property name="maximumSize">
-        <size>
-         <width>100</width>
-         <height>30</height>
-        </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">font: italic 12pt &quot;Trebuchet MS&quot;;
-color: rgb(255, 255, 255);</string>
-       </property>
-       <property name="text">
-        <string>running...</string>
-       </property>
-      </widget>
-     </item>
     </layout>
+   </widget>
+   <widget class="QLabel" name="runningLabel">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>280</y>
+      <width>100</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>100</width>
+      <height>30</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: italic 12pt &quot;Trebuchet MS&quot;;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>running...</string>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">

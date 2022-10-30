@@ -7,13 +7,14 @@ from pyautogui import size as pagsize
 from pyautogui import moveTo as pagmoveTo
 from pyautogui import click as pagclick
 import time
+import random
 # this is rando branch
 os.environ["QT_AUTO_SCREEN_SCALE_FACTOR"] = '1'
 
-Ui_MainWindow, QMainWindow = loadUiType('zoomclicker.ui') 
+Ui_MainWindow, QMainWindow = loadUiType('zoomclicker_rando.ui') 
 Ui_AboutWindow, QAboutWindow = loadUiType('about.ui')
 
-vers = '0.1.0'
+vers = '0.2.0'
 
 mousetime = 0.5
 screenwidth = pagsize().width
@@ -50,21 +51,32 @@ class Worker(QObject):
     nscreens = 2
     timedelay = 5
     def run(self):
-        time.sleep(self.timedelay)
-        for i in range(20):
+        dt = max(3,self.randify(self.timedelay))
+        #print(dt)
+        time.sleep(dt)
+        for i in range(50):
             pagmoveTo(rightx,midpoint,duration=mousetime)
             for i in range(self.nscreens-1):
                 pagclick()
-                time.sleep(self.timedelay)
+                dt = max(3,self.randify(self.timedelay))
+                #print(dt)
+                time.sleep(dt)
             pagmoveTo(leftx,midpoint,duration=mousetime)
             for i in range(self.nscreens-1):
                 pagclick()
-                time.sleep(self.timedelay)   
+                dt = max(3,self.randify(self.timedelay))
+                #print(dt)
+                time.sleep(dt)
 
     def getvalues(self, a, b):
         self.nscreens = a
         self.timedelay = b
         #print(a, b)
+    
+    def randify(self, timedelay):
+        pct = main.randoSlider.value()
+        rnd = random.random()
+        return int(timedelay*(1 + pct/100*(2*rnd - 1)))   
 
 class Main(QMainWindow, Ui_MainWindow):
     valueSignal = pyqtSignal(int, int)
@@ -78,6 +90,9 @@ class Main(QMainWindow, Ui_MainWindow):
         self.actionExit.triggered.connect(self.buttClose)
         self.actionHelp.triggered.connect(self.openhelp)
         self.actionAbout_2.triggered.connect(self.openabout)
+        self.randoSlider.setValue(50)
+        self.randoLabel.setText('Randomness 50%')
+        self.randoSlider.sliderReleased.connect(self.sliderchanged)  
         self.quitButt.clicked.connect(self.buttClose)
         self.startButt.clicked.connect(self.startit)
         self.thread = QThread()
@@ -141,7 +156,7 @@ class Main(QMainWindow, Ui_MainWindow):
             msgBox.setStyleSheet("background-color:rgb(50,50,50)")
             msgBox.setText('<font color=\"White\">A time dalay of less than 3 sec will cause loss of mouse control!')
             msgBox.exec_()           
-            return            
+            return   
         self.runclickerthread()
             
     def runclickerthread(self):
@@ -150,6 +165,10 @@ class Main(QMainWindow, Ui_MainWindow):
         self.thread.started.connect(self.worker.run)
         self.thread.start()
         
+    def sliderchanged(self):
+        a = self.randoSlider.value()
+        self.randoLabel.setText('Randomness '+str(a)+'%') 
+    
     def buttClose(self):
         try:
             self.aboutwin.close()
